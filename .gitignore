@@ -1,0 +1,8 @@
+packages/
+*.dll
+*.log
+SpaceInvaders/Debug/SpaceInvaders.tlog/unsuccessfulbuild
+.vs/SpaceInvaders/v14/.suo
+SpaceInvaders.VC.VC.opendb
+SpaceInvaders.VC.db
+SpaceInvaders.sln
