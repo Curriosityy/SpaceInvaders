@@ -2,9 +2,8 @@
 #include "bullet.h"
 
 
-player::player(entity_manager* manager,sf::Texture * spriteSheet, sf::IntRect rect,float x,float y) : entity()
+player::player(sf::Texture * spriteSheet, sf::IntRect rect,float x,float y) : entity()
 {
-	this->manager = manager;
 	this->active = 1;
 	this->idType = 1;
 	this->speed = 2;
@@ -12,7 +11,7 @@ player::player(entity_manager* manager,sf::Texture * spriteSheet, sf::IntRect re
 	this->Load(spriteSheet,rect);
 }
 
-void player::Update(sf::Texture* spriteSheet, sf::RenderWindow * window)
+void player::Update(sf::Texture* spriteSheet, sf::RenderWindow * window, entity_manager* manager)
 {
 	this->velocity.x = (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right) - sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left));
 

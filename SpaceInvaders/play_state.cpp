@@ -15,7 +15,7 @@ void play_state::Initialize(sf::RenderWindow * window)
 {
 	spriteSheet = new sf::Texture();
 	spriteSheet->loadFromFile("spriteSheet.png");
-	this->manager.Add("player", new player(&this->manager,this->spriteSheet, sf::IntRect(132, 15, 28, 14), window->getSize().x/2, window->getSize().y));
+	this->manager.Add("player", new player(this->spriteSheet, sf::IntRect(132, 15, 28, 14), window->getSize().x/2, window->getSize().y));
 	this->manager.Add("enemy", new enemy(this->spriteSheet, sf::IntRect(0, 11, 32, 16), window->getSize().x / 2, window->getSize().y / 2));
 	this->manager.Add("enemy", new enemy(this->spriteSheet, sf::IntRect(0, 11, 32, 16), window->getSize().x / 2 + 40, window->getSize().y / 2));
 	this->manager.Add("enemy", new enemy(this->spriteSheet, sf::IntRect(0, 11, 32, 16), window->getSize().x / 2 + 80, window->getSize().y / 2));

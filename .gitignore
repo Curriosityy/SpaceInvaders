@@ -6,3 +6,5 @@ SpaceInvaders/Debug/SpaceInvaders.tlog/unsuccessfulbuild
 SpaceInvaders.VC.VC.opendb
 SpaceInvaders.VC.db
 SpaceInvaders.sln
+*.obj
+Debug/
